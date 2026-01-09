@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Your Name</h1>
+    <p class="tagline">PhD student • Data science • Computational neuroscience</p>
+    <nav class="links">
+      <a href="mailto:you@email.com">Email</a>
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        Short intro. Mention your focus areas and what you want roles in.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <h3>Project Title</h3>
+          <p>1–2 lines on impact + tools.</p>
+          <a href="https://github.com/yourusername/project">Repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Ask my chatbot about my experience</h2>
+      <div id="chat">
+        <div id="chat-log"></div>
+        <form id="chat-form">
+          <input id="chat-input" placeholder="Ask about my research, skills, projects…" autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+        <p class="hint">
+          Example: “What projects show your data science skills?” • “Summarize your research in 3 sentences.”
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
