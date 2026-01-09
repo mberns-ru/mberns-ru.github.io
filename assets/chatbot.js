@@ -2,6 +2,15 @@ const logEl = document.getElementById("chat-log");
 const formEl = document.getElementById("chat-form");
 const inputEl = document.getElementById("chat-input");
 
+/**
+ * Set this to your deployed Cloudflare Worker URL.
+ * Example:
+ *   const CHAT_ENDPOINT = "https://portfolio-chatbot.<your-subdomain>.workers.dev/chat";
+ *
+ * If left as null, the chatbot will fall back to the local (non-LLM) retrieval-only version.
+ */
+const CHAT_ENDPOINT = "https://portfolio-chatbot.madeline-berns.workers.dev/chat";
+
 function addMsg(role, text) {
   const row = document.createElement("div");
   row.className = `msg ${role}`;
@@ -46,7 +55,7 @@ function retrieveTop(query, kb, k = 4) {
   return hits.slice(0, k);
 }
 
-function buildAnswer(query, hits, kb) {
+function buildAnswer(query, hits) {
   if (!hits.length) {
     return (
       "I can’t answer that from Madeline’s resume/portfolio content.\n" +
@@ -79,11 +88,47 @@ async function loadKB() {
 
 let KB_PROMISE = loadKB();
 
+async function askLLM(question) {
+  const res = await fetch(CHAT_ENDPOINT, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ question }),
+  });
+
+  if (!res.ok) {
+    const txt = await res.text().catch(() => "");
+    throw new Error(`Chat API error: ${res.status} ${txt}`);
+  }
+
+  return await res.json(); // { answer, sources? }
+}
+
 async function handleAsk(q) {
+  if (CHAT_ENDPOINT) {
+    try {
+      const data = await askLLM(q);
+      let out = (data.answer || "").trim();
+
+      if (Array.isArray(data.sources) && data.sources.length) {
+        out += `\n\nSources: ${data.sources.join(", ")}`;
+      }
+
+      addMsg("bot", out || "Sorry — I couldn't generate an answer right now.");
+      return;
+    } catch (e) {
+      console.warn(e);
+      addMsg(
+        "bot",
+        "I couldn't reach the LLM right now, so I’m falling back to local resume-only search."
+      );
+      // fall through
+    }
+  }
+
+  // Local fallback
   const kb = await KB_PROMISE;
   const hits = retrieveTop(q, kb, 5);
-  const answer = buildAnswer(q, hits, kb);
-  addMsg("bot", answer);
+  addMsg("bot", buildAnswer(q, hits));
 }
 
 formEl.addEventListener("submit", async (e) => {
@@ -93,14 +138,6 @@ formEl.addEventListener("submit", async (e) => {
   addMsg("user", q);
   inputEl.value = "";
   await handleAsk(q);
-});
-
-document.querySelectorAll(".hint").forEach((btn) => {
-  btn.addEventListener("click", async () => {
-    const q = btn.getAttribute("data-q");
-    addMsg("user", q);
-    await handleAsk(q);
-  });
 });
 
 // Welcome message
