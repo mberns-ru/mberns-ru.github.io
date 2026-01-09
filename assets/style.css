@@ -19,12 +19,12 @@ body{
   margin:0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Coronette", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
 }
 
 /* --- Top bar --- */
 .topbar{
-  background: var(--bar);
+  background: var(--bg);
   border-bottom: 2px solid rgba(13,13,15,.08);
 }
 
@@ -55,6 +55,7 @@ body{
   justify-content:center;
   color: rgba(255,255,255,.92);
   font-size: 14px;
+  box-shadow: var(--shadow);
 }
 
 .topbar-text{
@@ -88,6 +89,11 @@ body{
   align-items:start;
 }
 
+/* Allow a block to span both columns of the main grid */
+.full-width{
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 980px){
   .layout{ grid-template-columns: 1fr; }
   .avatar-wrap{ transform: translateY(10px); }
@@ -108,6 +114,65 @@ body{
   padding: 18px 18px;
   background: rgba(255,255,255,.14);
   min-height: 140px;
+}
+
+/* --- Project cards --- */
+.cards-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card{
+  border: 3px dashed var(--dash);
+  border-radius: 14px;
+  overflow:hidden;
+  background: rgba(255,255,255,.18);
+  box-shadow: var(--shadow);
+  display:flex;
+  flex-direction:column;
+  min-height: 100%;
+}
+
+.card-media{
+  background: rgba(255,255,255,.35);
+  border-bottom: 1px solid rgba(13,13,15,.10);
+}
+
+.card-media img{
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display:block;
+}
+
+@media (max-width: 520px){
+  .card-media img{ height: 190px; }
+}
+
+.card-body{
+  padding: 14px 14px 16px;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.card-head{
+  display:flex;
+  justify-content:space-between;
+  gap: 10px;
+  flex-wrap:wrap;
+  align-items:baseline;
+}
+
+.card-title{
+  font-size: 18px;
+}
+
+.card-text{
+  margin: 0;
+  color: rgba(13,13,15,.88);
+  line-height: 1.35;
 }
 
 .dashed-box p{ margin: 0 0 10px; }
@@ -155,6 +220,7 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
   display:flex;
   flex-wrap:wrap;
   gap: 10px;
+  box-shadow: var(--shadow);
 }
 
 .pill{
@@ -172,6 +238,7 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
   background: var(--panel);
   border-radius: 34px;
   padding: 20px 18px 18px;
+  box-shadow: var(--shadow);
   min-height: 560px;
   position: sticky;
   top: 18px;

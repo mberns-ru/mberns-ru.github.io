@@ -12,7 +12,6 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="avatar-wrap" aria-hidden="true">
-        <!-- Replace assets/profile.png with your photo -->
         <img src="assets/profile.jpg" alt="Photo of Madeline Berns" class="avatar" />
       </div>
 
@@ -30,8 +29,8 @@
 
   <main class="page">
     <div class="layout">
-      <!-- LEFT COLUMN -->
-      <section class="leftcol">
+      <!-- LEFT COLUMN (Bio + Experience) -->
+      <section class="leftcol" aria-label="Bio and experience">
         <div class="block">
           <h2 class="section-title">Bio</h2>
           <div class="dashed-box">
@@ -72,167 +71,6 @@
             </div>
           </div>
         </div>
-
-        <!-- NEW: PROJECTS -->
-        <div class="block">
-          <h2 class="section-title">Projects</h2>
-          <div class="dashed-box">
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>Portfolio Optimization Dashboard</strong>
-                <span class="muted">Dec 2025</span>
-              </div>
-
-              <!-- Add your image here (create assets/projects/portfolio_opt.png) -->
-              <img
-                src="assets/projects/portfolio_opt.png"
-                alt="Portfolio Optimization Dashboard screenshot"
-                style="width:100%; max-width:520px; margin:12px 0; border-radius:8px;"
-              />
-
-              <p>
-                Streamlit dashboard for optimizing portfolios using ML models (XGBoost, Random Forest, PCA, CatBoost)
-                with user-set parameters and benchmark comparison.
-              </p>
-
-              <div class="links">
-                <!-- Update these links -->
-                <a href="https://github.com/mberns-ru" target="_blank" rel="noreferrer">GitHub</a>
-                <!-- <a href="https://your-live-demo-link.com" target="_blank" rel="noreferrer">Live Demo</a> -->
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>Dose–Response Curve Dashboard</strong>
-                <span class="muted">Dec 2025</span>
-              </div>
-
-              <!-- Add your image here (create assets/projects/dose_response.png) -->
-              <img
-                src="assets/projects/dose_response.png"
-                alt="Dose–Response Curve Dashboard screenshot"
-                style="width:100%; max-width:520px; margin:12px 0; border-radius:8px;"
-              />
-
-              <p>
-                Interactive simulator for dose-response curves using 2/4/5PL and linear models; supports saving curves,
-                suggesting dilution schemes, and exporting locked fits.
-              </p>
-
-              <div class="links">
-                <!-- Update these links -->
-                <a href="https://github.com/mberns-ru" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>CODA (Hack GT 9)</strong>
-                <span class="muted">Oct 2022</span>
-              </div>
-
-              <!-- Optional: add image -->
-              <!-- <img
-                src="assets/projects/coda.png"
-                alt="CODA project screenshot"
-                style="width:100%; max-width:520px; margin:12px 0; border-radius:8px;"
-              /> -->
-
-              <p>
-                2nd place overall. Interactive rhythm game to learn ASL using computer vision to track hand movements
-                (Python, Figma, Unity).
-              </p>
-            </div>
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>Alzheimer’s Assessment (CNN)</strong>
-                <span class="muted">May 2023</span>
-              </div>
-
-              <p>
-                CNN pipeline to assess Alzheimer’s severity from CT scans; preprocessing included oversampling,
-                cropping, PCA; evaluated ResNet/AlexNet/PCANet; illustrated architectures with LaTeX.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- NEW: PAPERS & PRESENTATIONS -->
-        <div class="block">
-          <h2 class="section-title">Papers &amp; Presentations</h2>
-          <div class="dashed-box">
-
-            <div class="item">
-              <strong>Auditory decision-making deficits after permanent noise-induced hearing loss</strong>
-              <p class="muted">Scientific Reports, 2025</p>
-              <div class="links">
-                <!-- Update with DOI / publisher link if you want -->
-                <!-- <a href="https://doi.org/your-doi" target="_blank" rel="noreferrer">Paper</a> -->
-              </div>
-            </div>
-
-            <div class="item">
-              <strong>Audiovisual decision-making deficits after hearing loss</strong>
-              <p class="muted">ARO Midwinter Meeting, 2024 • Poster (Anaheim, CA)</p>
-            </div>
-
-            <div class="item">
-              <strong>Intergenerational trauma and Russian/Ukrainian cultural identities</strong>
-              <p class="muted">Undergraduate Research Spring Symposium, 2022 • Poster</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- NEW: EDUCATION -->
-        <div class="block">
-          <h2 class="section-title">Education</h2>
-          <div class="dashed-box">
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>Rutgers University</strong>
-                <span class="muted">2025–Present</span>
-              </div>
-              <p>
-                M.S. in Data Science<br />
-                <span class="muted">GPA: 3.96 / 4.0</span>
-              </p>
-            </div>
-
-            <div class="item">
-              <div class="itemhead">
-                <strong>Georgia Institute of Technology</strong>
-                <span class="muted">2019–2023</span>
-              </div>
-              <p>
-                B.S. in Neuroscience<br />
-                Minor: Computing &amp; Intelligence<br />
-                <span class="muted">Major GPA: 3.6 / 4.0</span>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="skills-block">
-          <h2 class="section-title skills-title">Skills</h2>
-          <div class="skills-bar">
-            <span class="pill">Python</span>
-            <span class="pill">Pandas</span>
-            <span class="pill">NumPy</span>
-            <span class="pill">SciPy</span>
-            <span class="pill">PyTorch</span>
-            <span class="pill">scikit-learn</span>
-            <span class="pill">Streamlit</span>
-            <span class="pill">R</span>
-            <span class="pill">Adobe CC</span>
-          </div>
-        </div>
       </section>
 
       <!-- RIGHT COLUMN (CHAT) -->
@@ -263,6 +101,152 @@
           </div>
         </div>
       </aside>
+
+      <!-- FULL-WIDTH SECTIONS (span both columns) -->
+
+      <section class="block full-width" aria-label="Projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="cards-grid">
+          <article class="card" aria-label="Portfolio Optimization Dashboard">
+            <div class="card-media">
+              <img src="assets/projects/portfolio_opt.png" alt="Portfolio Optimization Dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <strong class="card-title">Portfolio Optimization Dashboard</strong>
+                <span class="muted">Dec 2025</span>
+              </div>
+              <p class="card-text">
+                Streamlit dashboard for optimizing portfolios using ML models (XGBoost, Random Forest, PCA, CatBoost)
+                with user-set parameters and benchmark comparison.
+              </p>
+              <div class="links">
+                <a href="https://github.com/mberns-ru" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Dose–Response Curve Dashboard">
+            <div class="card-media">
+              <img src="assets/projects/dose_response.png" alt="Dose–Response Curve Dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <strong class="card-title">Dose–Response Curve Dashboard</strong>
+                <span class="muted">Dec 2025</span>
+              </div>
+              <p class="card-text">
+                Interactive simulator for dose-response curves using 2/4/5PL and linear models; supports saving curves,
+                suggesting dilution schemes, and exporting locked fits.
+              </p>
+              <div class="links">
+                <a href="https://github.com/mberns-ru" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" aria-label="CODA (Hack GT 9)">
+            <div class="card-media">
+              <img src="assets/projects/coda.png" alt="CODA project screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <strong class="card-title">CODA (Hack GT 9)</strong>
+                <span class="muted">Oct 2022</span>
+              </div>
+              <p class="card-text">
+                2nd place overall. Interactive rhythm game to learn ASL using computer vision to track hand movements
+                (Python, Figma, Unity).
+              </p>
+            </div>
+          </article>
+
+          <article class="card" aria-label="Alzheimer’s Assessment (CNN)">
+            <div class="card-media">
+              <img src="assets/projects/alzheimers.png" alt="Alzheimer’s Assessment project screenshot" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <strong class="card-title">Alzheimer’s Assessment (CNN)</strong>
+                <span class="muted">May 2023</span>
+              </div>
+              <p class="card-text">
+                CNN pipeline to assess Alzheimer’s severity from CT scans; preprocessing included oversampling, cropping,
+                and PCA; evaluated ResNet/AlexNet/PCANet; illustrated architectures with LaTeX.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p class="muted" style="margin-top:10px;">
+          Tip: add your project images under <code>assets/projects/</code>
+          (e.g., <code>portfolio_opt.png</code>, <code>dose_response.png</code>, <code>coda.png</code>, <code>alzheimers.png</code>).
+        </p>
+      </section>
+
+      <section class="block full-width" aria-label="Papers and presentations">
+        <h2 class="section-title">Papers &amp; Presentations</h2>
+        <div class="dashed-box">
+          <div class="item">
+            <strong>Auditory decision-making deficits after permanent noise-induced hearing loss</strong>
+            <p class="muted">Scientific Reports, 2025</p>
+          </div>
+
+          <div class="item">
+            <strong>Audiovisual decision-making deficits after hearing loss</strong>
+            <p class="muted">ARO Midwinter Meeting, 2024 • Poster (Anaheim, CA)</p>
+          </div>
+
+          <div class="item">
+            <strong>Intergenerational trauma and Russian/Ukrainian cultural identities</strong>
+            <p class="muted">Undergraduate Research Spring Symposium, 2022 • Poster</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block full-width" aria-label="Education">
+        <h2 class="section-title">Education</h2>
+        <div class="dashed-box">
+          <div class="item">
+            <div class="itemhead">
+              <strong>Rutgers University</strong>
+              <span class="muted">2025–Present</span>
+            </div>
+            <p>
+              M.S. in Data Science<br />
+              <span class="muted">GPA: 3.96 / 4.0</span>
+            </p>
+          </div>
+
+          <div class="item">
+            <div class="itemhead">
+              <strong>Georgia Institute of Technology</strong>
+              <span class="muted">2019–2023</span>
+            </div>
+            <p>
+              B.S. in Neuroscience<br />
+              Minor: Computing &amp; Intelligence<br />
+              <span class="muted">Major GPA: 3.6 / 4.0</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-block full-width" aria-label="Skills">
+        <h2 class="section-title skills-title">Skills</h2>
+        <div class="skills-bar">
+          <span class="pill">Python</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">SciPy</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">scikit-learn</span>
+          <span class="pill">Streamlit</span>
+          <span class="pill">R</span>
+          <span class="pill">Adobe CC</span>
+        </div>
+      </section>
     </div>
   </main>
 
