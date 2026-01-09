@@ -1,0 +1,57 @@
+{
+  "owner": "Madeline Berns",
+  "policy": {
+    "scope": "resume_and_portfolio_only",
+    "refuse_outside": true
+  },
+  "sections": [
+    {
+      "title": "Education",
+      "chunks": [
+        "Rutgers University (New Brunswick, NJ): M.S. in Data Science, 2025–current. GPA 3.96/4.0.",
+        "Georgia Institute of Technology (Atlanta, GA): B.S. Neuroscience; Minor: Computing and Intelligence, 2019–2023. Major GPA 3.6/4.0."
+      ]
+    },
+    {
+      "title": "Skills",
+      "chunks": [
+        "Python: Pandas, NumPy, SciPy, PyTorch, scikit-learn, Matplotlib, Streamlit.",
+        "R: linear regression, statistical analysis, hypothesis testing.",
+        "Adobe Creative Cloud: Illustrator, Photoshop, InDesign.",
+        "Familiar: Java, C, JMP, SQL."
+      ]
+    },
+    {
+      "title": "Experience — Rutgers Research Assistant",
+      "chunks": [
+        "Built Python analysis pipeline for rodent auditory decision-making behavioral data; implemented drift diffusion modeling (DDM), statistical inference, and pose-tracking with angle analysis.",
+        "Built pipeline for neural recordings from electrode implants in auditory and parietal cortices; mapped electrode configuration/data to binary, spike sorting into units, developed decoders using SVM and pattern matching to predict behavior from neural activity; ran statistical analyses and linear regression.",
+        "Created schematics/visuals in Adobe Illustrator and Python; contributed to papers, posters, presentations; wrote papers and fellowship applications."
+      ]
+    },
+    {
+      "title": "Experience — Georgia Tech Research Institute",
+      "chunks": [
+        "Performed qualitative content analysis (QCA) and frequency analyses on books, historic interview transcripts, and papers on cultural trauma/history and ontological security in Russia/Ukraine and group interactions in extremist groups.",
+        "Mined online data from Russian press releases/websites; assisted ML protocol in Python; visualized data using Adobe CC."
+      ]
+    },
+    {
+      "title": "Projects",
+      "chunks": [
+        "Portfolio Optimization Dashboard (Dec 2025): Streamlit dashboard for optimizing portfolios with ML models (XGBoost, Random Forest, PCA, CatBoost) and user-set parameters; one result reported outperformance vs SPY by 4.17% in Sept 2025 (per resume).",
+        "Dose–Response Curve Dashboard (Dec 2025): Streamlit tool to simulate dose-response curves with 2/4/5PL and linear models; supports saving curves and suggesting dilution schemes based on error and linear regions.",
+        "CODA (Hack GT 9, Oct 2022): 2nd place overall; interactive rhythm game to help learn ASL using computer vision to track hand movements; built with Python, Figma, Unity.",
+        "Alzheimer’s Assessment (May 2023): CNN to assess Alzheimer’s severity from CT scans; preprocessing included oversampling, cropping, PCA; tried ResNet, AlexNet, PCANet; visualized performance and illustrated architectures with LaTeX."
+      ]
+    },
+    {
+      "title": "Publications & Presentations",
+      "chunks": [
+        "Scientific Reports (2025): 'Auditory decision-making deficits after permanent noise-induced hearing loss.'",
+        "ARO Midwinter Meeting (2024): Poster on audiovisual decision-making deficits after hearing loss (Anaheim, CA).",
+        "Undergraduate Research Spring Symposium (2022): Poster on intergenerational trauma and Russian/Ukrainian cultural identities."
+      ]
+    }
+  ]
+}

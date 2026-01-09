@@ -1,0 +1,142 @@
+:root{
+  --bg:#0b0f14;
+  --card:#111826;
+  --text:#e7eef8;
+  --muted:#a8b3c7;
+  --line:#223047;
+  --accent:#7aa2ff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(122,162,255,.25), transparent 60%),
+              radial-gradient(900px 600px at 90% 10%, rgba(150,255,204,.12), transparent 55%),
+              var(--bg);
+  color:var(--text);
+}
+
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{max-width:980px; margin:0 auto; padding:24px}
+header.container{padding-top:34px}
+
+.header-grid{
+  display:grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap:16px;
+  align-items:start;
+}
+@media (max-width: 860px){
+  .header-grid{grid-template-columns:1fr}
+}
+
+.subtitle{color:var(--muted); margin-top:6px}
+.links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; color:var(--muted)}
+.links span{color:var(--line)}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 16px;
+  padding:18px 18px;
+  margin:14px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:14px;
+}
+@media (max-width: 860px){
+  .grid{grid-template-columns:1fr}
+}
+
+.callout{
+  border: 1px solid rgba(122,162,255,.25);
+  background: rgba(122,162,255,.08);
+  border-radius: 16px;
+  padding:14px;
+}
+
+h1{font-size: 2.1rem; margin:0}
+h2{margin:0 0 10px; font-size: 1.25rem}
+p{line-height:1.5}
+ul{margin:10px 0 0 18px; color:var(--text)}
+li{margin:6px 0}
+.muted{color:var(--muted)}
+.item{margin-top:12px}
+.itemhead{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+.pillrow{display:flex; flex-wrap:wrap; gap:8px}
+.pill{
+  padding:6px 10px;
+  border-radius: 999px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  font-size:.92rem;
+}
+
+.chatbox{margin-top:10px}
+.chatlog{
+  height:260px;
+  overflow:auto;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.20);
+}
+
+.msg{margin:10px 0; display:flex; gap:10px}
+.bubble{
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  max-width: 86%;
+  white-space: pre-wrap;
+}
+.user .bubble{
+  margin-left:auto;
+  background: rgba(122,162,255,.10);
+  border-color: rgba(122,162,255,.18);
+}
+.bot .bubble{
+  background: rgba(255,255,255,.03);
+}
+
+.chatform{
+  display:flex; gap:10px; margin-top:10px;
+}
+.chatform input{
+  flex:1;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+  color:var(--text);
+}
+.chatform button{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(122,162,255,.35);
+  background: rgba(122,162,255,.16);
+  color:var(--text);
+  cursor:pointer;
+}
+.chatform button:hover{background: rgba(122,162,255,.22)}
+
+.chat-hints{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.hint{
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.02);
+  color: var(--text);
+  cursor:pointer;
+}
+.hint:hover{background: rgba(255,255,255,.05)}
+
+.footer{padding-bottom:40px}
