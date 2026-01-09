@@ -3,171 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Madeline Berns | Academic Portfolio</title>
+  <title>Madeline Berns | Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-  <header class="container">
-    <div class="header-grid">
-      <div>
-        <h1>Madeline Berns</h1>
-        <p class="subtitle">M.S. Data Science (Rutgers) • Neuroscience + Computing (Georgia Tech)</p>
-        <div class="links">
-          <a href="mailto:madelinepberns@gmail.com">Email</a>
-          <span>•</span>
-          <a href="https://github.com/mpberns" target="_blank" rel="noreferrer">GitHub</a>
-          <span>•</span>
-          <a href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noreferrer">LinkedIn</a>
+  <!-- Top banner -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="avatar-wrap" aria-hidden="true">
+        <!-- Replace assets/profile.png with your photo -->
+        <div class="avatar">
+          <span>photo of me</span>
         </div>
       </div>
-      <div class="callout">
-        <strong>Research focus:</strong>
-        <p>Behavior + neural data analysis, modeling (DDM), and ML-driven dashboards.</p>
+
+      <div class="topbar-text">
+        <h1 class="name">Madeline Berns</h1>
+        <div class="tagline">Data Science Graduate Student</div>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>About</h2>
-      <p>
-        I build analysis pipelines and interactive tools for research and applied ML—spanning
-        behavioral neuroscience, neural decoding, and data-science dashboards.
-      </p>
-    </section>
+  <main class="page">
+    <div class="layout">
+      <!-- LEFT COLUMN -->
+      <section class="leftcol">
+        <div class="block">
+          <h2 class="section-title">Bio</h2>
+          <div class="dashed-box">
+            <p>
+              I build analysis pipelines and interactive tools for research and applied ML—spanning
+              behavioral neuroscience, neural decoding, and data-science dashboards.
+            </p>
+            <p class="muted">
+              M.S. Data Science (Rutgers) • Neuroscience + Computing (Georgia Tech)
+            </p>
+            <p class="links">
+              <a href="https://github.com/mpberns" target="_blank" rel="noreferrer">GitHub</a>
+              <span>•</span>
+              <a href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noreferrer">LinkedIn</a>
+            </p>
+          </div>
+        </div>
 
-    <section class="grid">
-      <section class="card">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Rutgers University</strong> — M.S. Data Science (2025–current), GPA 3.96</li>
-          <li><strong>Georgia Tech</strong> — B.S. Neuroscience; Minor: Computing & Intelligence (2019–2023), GPA 3.6</li>
-        </ul>
+        <div class="block">
+          <h2 class="section-title">Experience</h2>
+          <div class="dashed-box">
+            <div class="item">
+              <div class="itemhead">
+                <strong>Research Assistant — Rutgers University</strong>
+                <span class="muted">Aug 2023 – Jan 2025</span>
+              </div>
+              <ul>
+                <li>Built Python pipelines for rodent auditory decision-making behavioral analysis; implemented drift diffusion modeling (DDM).</li>
+                <li>Processed neural recordings from implants; spike sorting, unit decoding (SVM + pattern matching) tied to behavior.</li>
+                <li>Designed research schematics/visuals (Illustrator) and contributed to papers/posters.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="itemhead">
+                <strong>Research Assistant — Georgia Tech Research Institute</strong>
+                <span class="muted">May 2021 – May 2023</span>
+              </div>
+              <ul>
+                <li>Qualitative content analysis + frequency analyses on cultural trauma/history materials; supported ML protocols in Python.</li>
+                <li>Data mining from Russian press releases/websites; created accessible visualizations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <h2 class="section-title skills-title">Skills</h2>
+          <div class="skills-bar">
+            <span class="pill">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">SciPy</span>
+            <span class="pill">PyTorch</span>
+            <span class="pill">scikit-learn</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">R</span>
+            <span class="pill">Adobe CC</span>
+          </div>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>Skills</h2>
-        <p class="pillrow">
-          <span class="pill">Python</span>
-          <span class="pill">Pandas</span>
-          <span class="pill">NumPy</span>
-          <span class="pill">SciPy</span>
-          <span class="pill">PyTorch</span>
-          <span class="pill">scikit-learn</span>
-          <span class="pill">Matplotlib</span>
-          <span class="pill">Streamlit</span>
-          <span class="pill">R</span>
-          <span class="pill">Adobe CC</span>
-        </p>
-      </section>
-    </section>
+      <!-- RIGHT COLUMN (CHAT) -->
+      <aside class="rightcol" aria-label="Chatbot panel">
+        <div class="chat-panel">
+          <div class="chat-title">
+            Ask me about...<br />
+            <span>my projects</span>
+          </div>
 
-    <section class="card">
-      <h2>Experience</h2>
-      <div class="item">
-        <div class="itemhead">
-          <strong>Research Assistant — Rutgers University</strong>
-          <span class="muted">Aug 2023 – Jan 2025</span>
+          <div class="chatbox" id="chatbot">
+            <div id="chat-log" class="chatlog" aria-live="polite"></div>
+
+            <form id="chat-form" class="chatform">
+              <input
+                id="chat-input"
+                type="text"
+                placeholder="Start typing..."
+                autocomplete="off"
+                required
+              />
+              <button type="submit" aria-label="Send">send</button>
+            </form>
+
+            <p class="chat-note">
+              The chatbot answers only from my portfolio/resume content.
+            </p>
+          </div>
         </div>
-        <ul>
-          <li>Built Python pipelines for rodent auditory decision-making behavioral analysis; implemented drift diffusion modeling (DDM).</li>
-          <li>Processed neural recordings from implants; spike sorting, unit decoding (SVM + pattern matching) tied to behavior.</li>
-          <li>Designed schematics and research visuals in Illustrator; contributed to papers and fellowship applications.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="itemhead">
-          <strong>Research Assistant — Georgia Tech Research Institute</strong>
-          <span class="muted">May 2021 – May 2023</span>
-        </div>
-        <ul>
-          <li>Qualitative content analysis + frequency analyses on cultural trauma/history materials; supported ML protocols in Python.</li>
-          <li>Data mining from Russian press releases/websites; created accessible visualizations.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Selected Projects</h2>
-      <div class="item">
-        <div class="itemhead">
-          <strong>Portfolio Optimization Dashboard (Streamlit)</strong>
-          <span class="muted">Dec 2025</span>
-        </div>
-        <ul>
-          <li>Interactive portfolio optimization with ML models (XGBoost, RF, PCA, CatBoost) and investor controls.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="itemhead">
-          <strong>Dose–Response Curve Dashboard (Streamlit)</strong>
-          <span class="muted">Dec 2025</span>
-        </div>
-        <ul>
-          <li>Simulated 2/4/5PL + linear models; saving/locking curves; suggested dilution schemes from goal anchors.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="itemhead">
-          <strong>CODA (Hack GT 9 — 2nd Place Overall)</strong>
-          <span class="muted">Oct 2022</span>
-        </div>
-        <ul>
-          <li>Computer-vision rhythm game to help learn ASL; built in 36 hours with Python/Figma/Unity.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Publications & Presentations</h2>
-      <ul>
-        <li><strong>Scientific Reports (2025):</strong> “Auditory decision-making deficits after permanent noise-induced hearing loss.”</li>
-        <li><strong>ARO Midwinter (2024):</strong> Poster on audiovisual decision-making deficits after hearing loss.</li>
-        <li><strong>URSS (2022):</strong> Poster on intergenerational trauma and cultural identities.</li>
-      </ul>
-    </section>
-
-    <section class="card" id="chatbot">
-      <h2>Ask about my experience</h2>
-      <p class="muted">
-        This chatbot answers only from my portfolio/resume content (no outside knowledge).
-      </p>
-
-      <div class="chatbox">
-        <div id="chat-log" class="chatlog" aria-live="polite"></div>
-
-        <form id="chat-form" class="chatform">
-          <input
-            id="chat-input"
-            type="text"
-            placeholder="e.g., What did you do at Rutgers? What ML tools do you use?"
-            autocomplete="off"
-            required
-          />
-          <button type="submit">Ask</button>
-        </form>
-
-        <div class="chat-hints">
-          <button class="hint" data-q="Summarize your Rutgers research experience.">Rutgers experience</button>
-          <button class="hint" data-q="What are your strongest programming skills?">Skills</button>
-          <button class="hint" data-q="Tell me about your Streamlit dashboards.">Dashboards</button>
-          <button class="hint" data-q="List your publications and presentations.">Publications</button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> Madeline Berns • Built with GitHub Pages</p>
-    </footer>
+      </aside>
+    </div>
   </main>
 
   <script src="assets/chatbot.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
