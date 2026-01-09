@@ -19,7 +19,7 @@ body{
   margin:0;
   background: var(--bg);
   color: var(--ink);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+  font-family: "Coronette", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
 }
 
 /* --- Top bar --- */
@@ -155,7 +155,6 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
   display:flex;
   flex-wrap:wrap;
   gap: 10px;
-  box-shadow: var(--shadow);
 }
 
 .pill{
@@ -173,7 +172,6 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
   background: var(--panel);
   border-radius: 34px;
   padding: 20px 18px 18px;
-  box-shadow: var(--shadow);
   min-height: 560px;
   position: sticky;
   top: 18px;
