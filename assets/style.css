@@ -7,11 +7,6 @@
   --dash: rgba(13,13,15,.28);
   --white: rgba(255,255,255,.92);
   --shadow: 0 14px 34px rgba(0,0,0,.10);
-
-  /* NEW: unified accent tokens */
-  --accent: var(--bar);
-  --accent-ink: rgba(35, 40, 130, .85);
-  --accent-border: rgba(140, 150, 255, .95);
 }
 
 *{ box-sizing:border-box; }
@@ -108,17 +103,6 @@ body{
   position: relative;
 }
 
-/* Subtle purple accent underline */
-.section-title::after{
-  content:"";
-  display:block;
-  width: 140px;
-  height: 6px;
-  margin-top: 10px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), rgba(255,255,255,0));
-}
-
 .dashed-box{
   border: 3px dashed var(--dash);
   border-radius: 8px;
@@ -142,7 +126,7 @@ body{
 }
 
 .card{
-  border: 3px dashed var(--accent-border);              /* purple accent border */
+  border: 3px dashed var(--dash);
   border-radius: 16px;
   overflow:hidden;
   background: rgba(255,255,255,.20);
