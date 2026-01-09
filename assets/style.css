@@ -1,19 +1,22 @@
 :root{
   --bg: #ffffff;
-  --bar: #c8ccff;
-  --panel: #c3c7fb;
+  --bar: #c8ccff;         /* purple accent (skills) */
+  --panel: #c3c7fb;       /* purple panel (chat) */
   --ink: #0d0d0f;
   --muted: rgba(13,13,15,.65);
   --dash: rgba(13,13,15,.28);
   --white: rgba(255,255,255,.92);
   --shadow: 0 14px 34px rgba(0,0,0,.10);
+
+  /* NEW: unified accent tokens */
+  --accent: var(--bar);
+  --accent-ink: rgba(35, 40, 130, .85);
+  --accent-border: rgba(140, 150, 255, .95);
 }
 
 *{ box-sizing:border-box; }
 
-html, body{
-  height:100%;
-}
+html, body{ height:100%; }
 
 body{
   margin:0;
@@ -24,7 +27,7 @@ body{
 
 /* --- Top bar --- */
 .topbar{
-  background: var(--bg);
+  background: var(--bar);
   border-bottom: 2px solid rgba(13,13,15,.08);
 }
 
@@ -58,9 +61,7 @@ body{
   box-shadow: var(--shadow);
 }
 
-.topbar-text{
-  padding-left: 8px;
-}
+.topbar-text{ padding-left: 8px; }
 
 .name{
   margin:0;
@@ -90,22 +91,32 @@ body{
 }
 
 /* Allow a block to span both columns of the main grid */
-.full-width{
-  grid-column: 1 / -1;
-}
+.full-width{ grid-column: 1 / -1; }
 
 @media (max-width: 980px){
   .layout{ grid-template-columns: 1fr; }
   .avatar-wrap{ transform: translateY(10px); }
 }
 
-/* --- Left blocks --- */
+/* --- Blocks --- */
 .block{ margin-bottom: 26px; }
 
 .section-title{
   margin: 0 0 10px;
   font-size: 44px;
   letter-spacing: 1px;
+  position: relative;
+}
+
+/* Subtle purple accent underline */
+.section-title::after{
+  content:"";
+  display:block;
+  width: 140px;
+  height: 6px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), rgba(255,255,255,0));
 }
 
 .dashed-box{
@@ -117,37 +128,50 @@ body{
 }
 
 /* --- Project cards --- */
+
+/* 2 per row by default */
 .cards-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* 1 per row on small screens */
+@media (max-width: 820px){
+  .cards-grid{ grid-template-columns: 1fr; }
 }
 
 .card{
-  border: 3px dashed var(--dash);
-  border-radius: 14px;
+  border: 3px dashed var(--accent-border);              /* purple accent border */
+  border-radius: 16px;
   overflow:hidden;
-  background: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.20);
   box-shadow: var(--shadow);
   display:flex;
   flex-direction:column;
   min-height: 100%;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(0,0,0,.12);
 }
 
 .card-media{
-  background: rgba(255,255,255,.35);
+  background: linear-gradient(180deg, rgba(200,204,255,.55), rgba(255,255,255,.25));
   border-bottom: 1px solid rgba(13,13,15,.10);
 }
 
 .card-media img{
   width: 100%;
-  height: 210px;
+  height: 230px;
   object-fit: cover;
   display:block;
 }
 
 @media (max-width: 520px){
-  .card-media img{ height: 190px; }
+  .card-media img{ height: 200px; }
 }
 
 .card-body{
@@ -167,6 +191,7 @@ body{
 
 .card-title{
   font-size: 18px;
+  color: var(--ink);
 }
 
 .card-text{
@@ -194,19 +219,18 @@ body{
   flex-wrap:wrap;
 }
 
+/* Purple-accent links */
 a{
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 2px solid rgba(13,13,15,.25);
+  border-bottom: 2px solid rgba(140,150,255,.75);
 }
-a:hover{ border-bottom-color: rgba(13,13,15,.55); }
+a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 
 .muted{ color: var(--muted); }
 
 /* --- Skills bar --- */
-.skills-block{
-  margin-top: 18px;
-}
+.skills-block{ margin-top: 18px; }
 
 .skills-title{
   font-size: 34px;
@@ -255,9 +279,7 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
   margin-top: 4px;
 }
 
-.chatbox{
-  padding: 10px 12px 8px;
-}
+.chatbox{ padding: 10px 12px 8px; }
 
 .chatlog{
   height: 360px;
@@ -305,7 +327,7 @@ a:hover{ border-bottom-color: rgba(13,13,15,.55); }
 }
 
 .chatform input:focus{
-  box-shadow: 0 0 0 4px rgba(13,13,15,.08);
+  box-shadow: 0 0 0 4px rgba(140,150,255,.35);
 }
 
 .chatform button{
