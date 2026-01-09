@@ -6,7 +6,6 @@
   --muted: rgba(13,13,15,.65);
   --dash: rgba(13,13,15,.28);
   --white: rgba(255,255,255,.92);
-  --shadow: 0 14px 34px rgba(0,0,0,.10);
 }
 
 *{ box-sizing:border-box; }
@@ -53,7 +52,6 @@ body{
   justify-content:center;
   color: rgba(255,255,255,.92);
   font-size: 14px;
-  box-shadow: var(--shadow);
 }
 
 .topbar-text{ padding-left: 8px; }
@@ -130,16 +128,13 @@ body{
   border-radius: 16px;
   overflow:hidden;
   background: rgba(255,255,255,.20);
-  box-shadow: var(--shadow);
   display:flex;
   flex-direction:column;
   min-height: 100%;
-  transition: transform .12s ease, box-shadow .12s ease;
 }
 
 .card:hover{
   transform: translateY(-2px);
-  box-shadow: 0 18px 44px rgba(0,0,0,.12);
 }
 
 .card-media{
@@ -228,7 +223,6 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
   display:flex;
   flex-wrap:wrap;
   gap: 10px;
-  box-shadow: var(--shadow);
 }
 
 .pill{
@@ -246,7 +240,6 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
   background: var(--panel);
   border-radius: 34px;
   padding: 20px 18px 18px;
-  box-shadow: var(--shadow);
   min-height: 560px;
   position: sticky;
   top: 18px;
