@@ -80,6 +80,29 @@ body{
   color: rgba(13,13,15,.82);
 }
 
+/* --- Footer --- */
+.site-footer{
+  margin-top: 70px;
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(13,13,15,.75);
+
+  background: linear-gradient(
+    180deg,
+    rgba(200,204,255,.55),
+    rgba(195,199,251,.55)
+  );
+
+  border-top: 2px dashed rgba(13,13,15,.18);
+}
+
+/* Heart styling */
+.site-footer .heart{
+  color: #7b82ff;
+  padding: 0 4px;
+}
+
 /* --- Page layout --- */
 .page{
   max-width: 1180px;
