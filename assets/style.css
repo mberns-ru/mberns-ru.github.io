@@ -256,7 +256,7 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
   background: var(--panel);
   border-radius: 34px;
   padding: 20px 18px 18px;
-  min-height: 560px;
+  min-height: 600px;
   position: sticky;
   top: 18px;
 }
@@ -275,7 +275,7 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 .chatbox{ padding: 10px 12px 8px; }
 
 .chatlog{
-  height: 360px;
+  height: 400px;
   overflow:auto;
   border-radius: 18px;
   padding: 12px;
