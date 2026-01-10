@@ -6,6 +6,14 @@
   },
   "sections": [
     {
+      "title": "Quick Facts",
+      "chunks": [
+        "Most recent role: Research Assistant at Rutgers University (Aug 2023 – Jan 2025).",
+        "Current status: M.S. student in Data Science at Rutgers University.",
+        "Primary focus: data science, biostatistics, research tooling."
+      ]
+    },
+    {
       "title": "Education",
       "chunks": [
         "Rutgers University (New Brunswick, NJ): M.S. in Data Science, 2025–current. GPA 3.96/4.0.",
