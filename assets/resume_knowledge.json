@@ -39,10 +39,14 @@
     {
       "title": "Projects",
       "chunks": [
-        "Portfolio Optimization Dashboard (Dec 2025): Streamlit dashboard for optimizing portfolios with ML models (XGBoost, Random Forest, PCA, CatBoost) and user-set parameters; one result reported outperformance vs SPY by 4.17% in Sept 2025 (per resume).",
-        "Dose–Response Curve Dashboard (Dec 2025): Streamlit tool to simulate dose-response curves with 2/4/5PL and linear models; supports saving curves and suggesting dilution schemes based on error and linear regions.",
-        "CODA (Hack GT 9, Oct 2022): 2nd place overall; interactive rhythm game to help learn ASL using computer vision to track hand movements; built with Python, Figma, Unity.",
-        "Alzheimer’s Assessment (May 2023): CNN to assess Alzheimer’s severity from CT scans; preprocessing included oversampling, cropping, PCA; tried ResNet, AlexNet, PCANet; visualized performance and illustrated architectures with LaTeX."
+        "Projects (from resume): Portfolio Optimization Dashboard (Streamlit), Dose-Response Curve Dashboard (BMS Challenge), CODA (Hack GT 9 ASL rhythm game), and an Alzheimer’s Assessment CNN project.",
+        "Portfolio Optimization Dashboard (project, Dec 2025): built a Streamlit dashboard where investors can optimize a stock portfolio with customizable risk aversion, transaction cost, and risk‑free rate parameters.",
+        "Portfolio Optimization Dashboard (project): implemented models including XGBoost, Random Forest, PCA, and CatBoost; trained on Yahoo! Finance data via API calls; resume notes XGBoost outperformed the SPY index by 4.17% in Sept 2025.",
+        "Dose‑Response Curve Dashboard (project, Dec 2025; BMS Challenge at Rutgers): built a Streamlit dashboard to simulate dose‑response curves using multiple models (2-, 4-, 5‑parameter logistic; linear) with customizable parameters.",
+        "Dose‑Response Curve Dashboard (project): added features to save and compare curves and to suggest optimal dilution schemes using squared‑error anchors and linear‑region coverage.",
+        "CODA (project; Hack GT 9, Oct 2022): team of 4 built an interactive rhythm game to help learn American Sign Language (ASL) using computer vision to recognize and track hand movements; built with Python, Figma, and Unity; won 2nd place overall (out of 900+ participants, 191 projects).",
+        "Alzheimer’s Assessment (project, May 2023): built a convolutional neural network to assess Alzheimer’s severity from CT scans; used preprocessing techniques including oversampling, cropping, PCA, and categorization; explored architectures including ResNet, AlexNet, and PCANet.",
+        "Alzheimer’s Assessment (project): used Matplotlib for performance visualizations and LaTeX to illustrate model architecture (per resume)."
       ]
     },
     {
