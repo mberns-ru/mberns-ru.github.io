@@ -36,10 +36,10 @@ body{
 }
 
 .avatar-wrap{
-  width: 132px;
-  height: 132px;
+  width: 150px;
+  height: 150px;
   flex: 0 0 auto;
-  position: relative;
+  position: center;
   transform: translateY(18px);
 }
 
