@@ -181,5 +181,5 @@ formEl.addEventListener("submit", async (e) => {
 // Welcome message
 addMsg(
   "bot",
-  "Hi! Ask me about Madeline’s experience. I’ll answer only from the resume/portfolio content."
+  "Hi! Ask me about my experience :)"
 );
