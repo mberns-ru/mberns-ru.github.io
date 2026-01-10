@@ -88,18 +88,14 @@ body{
   font-size: 14px;
   color: rgba(13,13,15,.75);
 
-  background: linear-gradient(
-    180deg,
-    rgba(200,204,255,.55),
-    rgba(195,199,251,.55)
-  );
+  background: var(--bar);
 
   border-top: 2px dashed rgba(13,13,15,.18);
 }
 
 /* Heart styling */
 .site-footer .heart{
-  color: #7b82ff;
+  color: #a80e0e;
   padding: 0 4px;
 }
 
