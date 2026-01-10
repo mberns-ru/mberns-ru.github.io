@@ -76,11 +76,24 @@
       <!-- RIGHT COLUMN (CHAT) -->
       <aside class="rightcol" aria-label="Chatbot panel">
         <div class="chat-panel">
-          <div class="chat-title">
-            Ask me about...<br />
-            <span>my projects</span>
-          </div>
+          <div class="chat-title-row">
+            <div class="chat-title">
+              Ask me about...<br />
+              <span>my projects</span>
+            </div>
 
+            <button
+              id="chat-toggle"
+              class="chat-toggle"
+              type="button"
+              aria-expanded="true"
+              aria-controls="chatbot"
+              title="Collapse/expand chatbot"
+            >
+              <span class="chev" aria-hidden="true">▾</span>
+              <span class="sr-only">Toggle chatbot</span>
+            </button>
+          </div>
           <div class="chatbox" id="chatbot">
             <div id="chat-log" class="chatlog" aria-live="polite"></div>
 

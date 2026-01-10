@@ -10,6 +10,44 @@ const inputEl = document.getElementById("chat-input");
  * If left as null, the chatbot will fall back to the local (non-LLM) retrieval-only version.
  */
 const CHAT_ENDPOINT = "https://portfolio-chatbot.madeline-berns.workers.dev/chat";
+const panelEl = document.querySelector(".chat-panel");
+const toggleEl = document.getElementById("chat-toggle");
+
+function setCollapsed(collapsed) {
+  if (!panelEl || !toggleEl) return;
+
+  panelEl.classList.toggle("collapsed", collapsed);
+  toggleEl.setAttribute("aria-expanded", String(!collapsed));
+
+  try {
+    localStorage.setItem("chat_collapsed", collapsed ? "1" : "0");
+  } catch (_) {}
+}
+
+function initChatCollapse() {
+  if (!panelEl || !toggleEl) return;
+
+  // Load saved state
+  let collapsed = false;
+  try {
+    collapsed = localStorage.getItem("chat_collapsed") === "1";
+  } catch (_) {}
+
+  setCollapsed(collapsed);
+
+  toggleEl.addEventListener("click", () => {
+    const isCollapsed = panelEl.classList.contains("collapsed");
+    setCollapsed(!isCollapsed);
+
+    // If expanding, focus input for convenience
+    if (isCollapsed && inputEl) {
+      setTimeout(() => inputEl.focus(), 0);
+    }
+  });
+}
+
+initChatCollapse();
+
 
 function addMsg(role, text) {
   const row = document.createElement("div");
