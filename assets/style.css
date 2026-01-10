@@ -270,8 +270,9 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 .chatbox{ padding: 10px 12px 8px; }
 
 .chatlog{
-  height: 400px;
-  overflow:auto;
+  height: 60vh;     /* fills 60% of viewport height */
+  max-height: 800px;
+  overflow: auto;
   border-radius: 18px;
   padding: 12px;
   background: rgba(255,255,255,.18);
