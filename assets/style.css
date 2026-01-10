@@ -248,10 +248,7 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 
 /* --- Chat panel --- */
 .chat-panel{
-  background: var(--panel);
-  border-radius: 34px;
-  padding: 20px 18px 18px;
-  min-height: 1200px;
+  min-height: 85vh;
   position: sticky;
   top: 18px;
 }
@@ -270,8 +267,7 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 .chatbox{ padding: 10px 12px 8px; }
 
 .chatlog{
-  height: 60vh;     /* fills 60% of viewport height */
-  max-height: 800px;
+  flex: 1;                /* ← key line */
   overflow: auto;
   border-radius: 18px;
   padding: 12px;
@@ -326,12 +322,19 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 
 /* Animated collapse */
 .chatbox{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 10px 12px 8px;
+
   transition: max-height .22s ease, opacity .18s ease, transform .18s ease;
   transform-origin: top;
-  max-height: 1200px; /* big enough for content */
+  max-height: 1200px;
   opacity: 1;
   transform: translateY(0);
 }
+
 
 .chat-panel.collapsed .chatbox{
   max-height: 0px;
