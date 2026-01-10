@@ -349,7 +349,7 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
 
   transition: max-height .22s ease, opacity .18s ease, transform .18s ease;
   transform-origin: top;
-  max-height: 800px;
+  max-height: 650px;
   opacity: 1;
   transform: translateY(0);
 }
