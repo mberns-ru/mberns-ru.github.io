@@ -270,6 +270,11 @@ a:hover{ border-bottom-color: rgba(90,105,255,.95); }
   min-height: 85vh;
   position: sticky;
   top: 18px;
+
+  background: var(--dash);
+  border-radius: 28px;
+  padding: 18px 16px 16px;
+  box-shadow: 0 12px 28px rgba(13,13,15,.08);
 }
 
 .chat-title{
