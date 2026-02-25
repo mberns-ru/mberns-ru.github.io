@@ -8,61 +8,77 @@
     {
       "title": "Quick Facts",
       "chunks": [
-        "Most recent role: Research Assistant at Rutgers University (Aug 2023 – Jan 2025).",
-        "Current status: M.S. student in Data Science at Rutgers University.",
-        "Primary focus: data science, biostatistics, research tooling."
+        "Current status: M.S. student in Data Science at Rutgers University (GPA 3.96/4.0).",
+        "Most recent role: Data Analyst at Friends Café (June 2025 – current).",
+        "Previous role: Research Assistant at Rutgers University (Aug 2023 – Jan 2025).",
+        "Primary focus areas: machine learning, statistical modeling, forecasting, and research data pipelines."
       ]
     },
     {
       "title": "Education",
       "chunks": [
         "Rutgers University (New Brunswick, NJ): M.S. in Data Science, 2025–current. GPA 3.96/4.0.",
-        "Georgia Institute of Technology (Atlanta, GA): B.S. Neuroscience; Minor: Computing and Intelligence, 2019–2023. Major GPA 3.6/4.0."
+        "Georgia Institute of Technology (Atlanta, GA): B.S. Neuroscience; Minor: Computing and Intelligence, 2019–2023. Major GPA 3.6/4.0.",
+        "Relevant coursework includes AI and LLM in Data Science, Machine Learning, Regression Analysis, Probability and Inference, Financial Statistics and Risk Management, Financial Data Mining, Statistical Modeling and Computing, and Data Wrangling and Husbandry."
       ]
     },
     {
       "title": "Skills",
       "chunks": [
-        "Python: Pandas, NumPy, SciPy, PyTorch, scikit-learn, Matplotlib, Streamlit.",
+        "Python: Pandas, NumPy, SciPy, PyTorch, TensorFlow, scikit-learn, Matplotlib, Plotly, Streamlit.",
         "R: linear regression, statistical analysis, hypothesis testing.",
-        "Adobe Creative Cloud: Illustrator, Photoshop, InDesign.",
-        "Familiar: Java, C, JMP, SQL."
+        "Machine Learning: PCA, Support Vector Machines (SVMs), supervised learning.",
+        "Natural Language Processing (NLP): sentiment analysis, named entity recognition (NER), topic modeling.",
+        "Data Visualization & Tools: Power BI, Adobe Creative Cloud (Illustrator, Photoshop).",
+        "Familiar with: Java, C, JMP."
+      ]
+    },
+    {
+      "title": "Experience — Data Analyst (Friends Café)",
+      "chunks": [
+        "Generated sales analytics reports analyzing transaction-level data to identify top revenue-driving products and customer purchase patterns.",
+        "Identified peak times of day, holiday sales trends, and most popular ingredients using exploratory data analysis.",
+        "Built time-series forecasting models (ARIMA and XGBoost) to predict daily revenue and item-level demand.",
+        "Evaluated forecasting models using cross-validation and MAE/RMSE metrics to optimize performance.",
+        "Developed an interactive Power BI dashboard to explore sales insights and generate summary reports."
       ]
     },
     {
       "title": "Experience — Rutgers Research Assistant",
       "chunks": [
-        "Built Python analysis pipeline for rodent auditory decision-making behavioral data; implemented drift diffusion modeling (DDM), statistical inference, and pose-tracking with angle analysis.",
-        "Built pipeline for neural recordings from electrode implants in auditory and parietal cortices; mapped electrode configuration/data to binary, spike sorting into units, developed decoders using SVM and pattern matching to predict behavior from neural activity; ran statistical analyses and linear regression.",
-        "Created schematics/visuals in Adobe Illustrator and Python; contributed to papers, posters, presentations; wrote papers and fellowship applications."
+        "Developed Python analysis pipeline for rodent auditory decision-making behavioral data using Drift Diffusion Modeling (DDM), statistical inference, and pose-tracking with angle analysis.",
+        "Built neural data processing pipeline for electrode implants in auditory and parietal cortices; mapped electrode configurations to binary format and spike sorted recordings into neural units.",
+        "Developed SVM-based neural decoders and pattern-matching algorithms to predict behavioral performance from neural activity.",
+        "Conducted statistical analyses and linear regression to analyze overall neural-behavior trends.",
+        "Created experimental schematics and data visualizations using Python and Adobe Illustrator; contributed to papers, posters, and presentations."
       ]
     },
     {
       "title": "Experience — Georgia Tech Research Institute",
       "chunks": [
-        "Performed qualitative content analysis (QCA) and frequency analyses on books, historic interview transcripts, and papers on cultural trauma/history and ontological security in Russia/Ukraine and group interactions in extremist groups.",
-        "Mined online data from Russian press releases/websites; assisted ML protocol in Python; visualized data using Adobe CC."
+        "Performed qualitative content analysis (QCA) and frequency analyses on cultural trauma and ontological security research related to Russia/Ukraine and extremist group interactions.",
+        "Mined data from Russian press releases and online sources; supported machine learning protocol development in Python.",
+        "Created accessible visualizations using Adobe Creative Cloud."
       ]
     },
     {
       "title": "Projects",
       "chunks": [
-        "Projects (from resume): Portfolio Optimization Dashboard (Streamlit), Dose-Response Curve Dashboard (BMS Challenge), CODA (Hack GT 9 ASL rhythm game), and an Alzheimer’s Assessment CNN project.",
-        "Portfolio Optimization Dashboard (project, Dec 2025): built a Streamlit dashboard where investors can optimize a stock portfolio with customizable risk aversion, transaction cost, and risk‑free rate parameters.",
-        "Portfolio Optimization Dashboard (project): implemented models including XGBoost, Random Forest, PCA, and CatBoost; trained on Yahoo! Finance data via API calls; resume notes XGBoost outperformed the SPY index by 4.17% in Sept 2025.",
-        "Dose‑Response Curve Dashboard (project, Dec 2025; BMS Challenge at Rutgers): built a Streamlit dashboard to simulate dose‑response curves using multiple models (2-, 4-, 5‑parameter logistic; linear) with customizable parameters.",
-        "Dose‑Response Curve Dashboard (project): added features to save and compare curves and to suggest optimal dilution schemes using squared‑error anchors and linear‑region coverage.",
-        "CODA (project; Hack GT 9, Oct 2022): team of 4 built an interactive rhythm game to help learn American Sign Language (ASL) using computer vision to recognize and track hand movements; built with Python, Figma, and Unity; won 2nd place overall (out of 900+ participants, 191 projects).",
-        "Alzheimer’s Assessment (project, May 2023): built a convolutional neural network to assess Alzheimer’s severity from CT scans; used preprocessing techniques including oversampling, cropping, PCA, and categorization; explored architectures including ResNet, AlexNet, and PCANet.",
-        "Alzheimer’s Assessment (project): used Matplotlib for performance visualizations and LaTeX to illustrate model architecture (per resume)."
+        "Portfolio Optimization Dashboard (Dec 2025): built a Streamlit dashboard enabling stock portfolio optimization with customizable risk aversion, transaction cost, and risk-free rate parameters.",
+        "Portfolio Optimization Dashboard: implemented XGBoost, Random Forest, PCA, and CatBoost models trained on Yahoo! Finance data via API calls; resume reports XGBoost outperformed the SPY index by 4.17% in September 2025.",
+        "Dose-Response Curve Dashboard (Dec 2025; 1st Place, Bristol Myers Squibb Challenge at Rutgers): built a Streamlit dashboard for simulating 2-, 4-, and 5-parameter logistic and linear dose-response models.",
+        "Dose-Response Curve Dashboard: implemented functionality to save and compare curves and suggest optimal dilution schemes using squared-error anchors and linear-region coverage.",
+        "CODA (Hack GT 9, Oct 2022): built an interactive rhythm game to teach American Sign Language (ASL) using computer vision to track hand movements; developed with Python, Figma, and Unity; won 2nd place overall out of 900+ participants and 191 projects.",
+        "Alzheimer’s Assessment (May 2023): developed a convolutional neural network to assess Alzheimer’s severity from CT scans using oversampling, cropping, PCA, and categorization.",
+        "Alzheimer’s Assessment: evaluated ResNet, AlexNet, and PCANet architectures; used Matplotlib for performance visualization and LaTeX to illustrate model architecture."
       ]
     },
     {
       "title": "Publications & Presentations",
       "chunks": [
         "Scientific Reports (2025): 'Auditory decision-making deficits after permanent noise-induced hearing loss.'",
-        "ARO Midwinter Meeting (2024): Poster on audiovisual decision-making deficits after hearing loss (Anaheim, CA).",
-        "Undergraduate Research Spring Symposium (2022): Poster on intergenerational trauma and Russian/Ukrainian cultural identities."
+        "Association for Research in Otolaryngology (ARO) Midwinter Meeting (2024): poster on audiovisual decision-making deficits after hearing loss (Anaheim, CA).",
+        "Undergraduate Research Spring Symposium (2022): poster on intergenerational trauma and Russian/Ukrainian cultural identities."
       ]
     }
   ]
