@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+
   <!-- Top banner -->
   <header class="topbar">
     <div class="topbar-inner">
@@ -21,11 +21,11 @@
 
       <div class="topbar-text">
         <h1 class="name">Madeline Berns</h1>
-        <div class="tagline">Data Science Graduate Student</div>
+        <div class="tagline">Data Scientist | Machine Learning | Applied Statistics</div>
         <p class="links">
-          <a href="https://github.com/mberns-ru" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/mberns-ru" target="_blank">GitHub</a>
           <span>•</span>
-          <a href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mpberns" target="_blank">LinkedIn</a>
         </p>
       </div>
     </div>
@@ -33,112 +33,135 @@
 
   <main class="page">
     <div class="layout">
-      <!-- LEFT COLUMN (Bio + Experience) -->
-      <section class="leftcol" aria-label="Bio and experience">
+
+      <!-- LEFT COLUMN -->
+      <section class="leftcol">
+
+        <!-- BIO -->
         <div class="block">
           <h2 class="section-title">Bio</h2>
           <div class="dashed-box">
             <p>
-              I build analysis pipelines and interactive tools for research and applied ML—spanning
-              data science, biostatistics, and computational neuroscience. Currently pursuing my M.S. in Data Science
-              at Rutgers University.
+              I build end-to-end data pipelines, predictive models, and interactive dashboards
+              spanning finance, neuroscience, and applied machine learning.
+              My work integrates statistical modeling, ML, and visualization to turn complex data into actionable insights.
             </p>
             <p class="muted">
-              M.S. Data Science (Rutgers, curr.) • B.S. Neuroscience (Georgia Tech)
+              M.S. Data Science (Rutgers, GPA 3.96) • B.S. Neuroscience (Georgia Tech)
             </p>
           </div>
         </div>
 
+        <!-- EXPERIENCE -->
         <div class="block">
           <h2 class="section-title">Experience</h2>
           <div class="dashed-box">
+
+            <!-- Data Analyst -->
+            <div class="item">
+              <div class="itemhead">
+                <strong>Data Analyst — Friends Café (New Brunswick, NJ)</strong>
+                <span class="muted">June 2025 – Present</span>
+              </div>
+              <ul>
+                <li>Analyzed transaction-level sales data to identify revenue-driving products, peak demand times, and ingredient trends.</li>
+                <li>Built ARIMA and XGBoost forecasting models to predict daily revenue and item demand (evaluated via MAE/RMSE).</li>
+                <li>Developed an interactive Power BI dashboard for business insights and reporting.</li>
+              </ul>
+            </div>
+
+            <!-- Rutgers RA -->
             <div class="item">
               <div class="itemhead">
                 <strong>Research Assistant — Rutgers University</strong>
                 <span class="muted">Aug 2023 – Jan 2025</span>
               </div>
               <ul>
-                <li>Built Python pipelines for rodent auditory decision-making behavioral analysis; implemented drift diffusion modeling (DDM).</li>
-                <li>Processed neural recordings from implants; spike sorting, unit decoding (SVM + pattern matching) tied to behavior.</li>
-                <li>Designed research schematics/visuals (Illustrator) and contributed to papers/posters.</li>
+                <li>Built Python pipelines analyzing rodent auditory decision-making behavior using Drift Diffusion Modeling (DDM).</li>
+                <li>Processed neural implant recordings; spike sorted units and developed SVM-based decoders to predict behavior.</li>
+                <li>Conducted statistical inference and regression analyses; produced publication-ready figures and schematics.</li>
               </ul>
             </div>
 
+            <!-- GTRI -->
             <div class="item">
               <div class="itemhead">
                 <strong>Research Assistant — Georgia Tech Research Institute</strong>
                 <span class="muted">May 2021 – May 2023</span>
               </div>
               <ul>
-                <li>Qualitative content analysis + frequency analyses on cultural trauma/history materials; supported ML protocols in Python.</li>
-                <li>Data mining from Russian press releases/websites; created accessible visualizations.</li>
+                <li>Performed qualitative content and frequency analyses on cultural trauma and political identity datasets.</li>
+                <li>Mined online Russian press data; supported ML protocol development and data visualization.</li>
               </ul>
             </div>
+
           </div>
         </div>
+
+        <!-- SKILLS -->
         <div class="skills-bar">
           <span class="pill">Python</span>
           <span class="pill">Pandas</span>
           <span class="pill">NumPy</span>
           <span class="pill">SciPy</span>
           <span class="pill">PyTorch</span>
+          <span class="pill">TensorFlow</span>
           <span class="pill">scikit-learn</span>
+          <span class="pill">Plotly</span>
           <span class="pill">Streamlit</span>
+          <span class="pill">Power BI</span>
           <span class="pill">R</span>
           <span class="pill">Adobe CC</span>
         </div>
+
       </section>
 
-      <!-- RIGHT COLUMN (CHAT) -->
-      <aside class="rightcol" aria-label="Chatbot panel">
+      <!-- RIGHT COLUMN (Chat remains unchanged) -->
+      <aside class="rightcol">
         <div class="chat-panel">
           <div class="chat-title-row">
-            <div class="chat-title">
-              Ask me anything!
-            </div>
-
-            <button
-              id="chat-toggle"
-              class="chat-toggle"
-              type="button"
-              aria-expanded="true"
-              aria-controls="chatbot"
-              title="Collapse/expand chatbot"
-            >
-              <span class="chev" aria-hidden="true">▾</span>
-              <span class="sr-only">Toggle chatbot</span>
+            <div class="chat-title">Ask me anything!</div>
+            <button id="chat-toggle" class="chat-toggle" type="button">
+              <span class="chev">▾</span>
             </button>
           </div>
           <div class="chatbox" id="chatbot">
-            <div id="chat-log" class="chatlog" aria-live="polite"></div>
-
+            <div id="chat-log" class="chatlog"></div>
             <form id="chat-form" class="chatform">
-              <input
-                id="chat-input"
-                type="text"
-                placeholder="Start typing..."
-                autocomplete="off"
-                required
-              />
-              <button type="submit" aria-label="Send">send</button>
+              <input id="chat-input" type="text" placeholder="Start typing..." required />
+              <button type="submit">send</button>
             </form>
-
             <p class="chat-note">
-              The chatbot answers only from my portfolio/resume content.
+              The chatbot answers only from my resume/portfolio content.
             </p>
           </div>
         </div>
       </aside>
 
-      <!-- FULL-WIDTH SECTIONS (span both columns) -->
-
-      <section class="block full-width" aria-label="Projects">
+      <!-- PROJECTS -->
+      <section class="block full-width">
         <h2 class="section-title">Projects</h2>
-
         <div class="cards-grid">
-          <article class="card" aria-label="Portfolio Optimization Dashboard">
+
+          <article class="card">
             <div class="card-media">
-              <img src="assets/projects/portfolio_opt.png" alt="Portfolio Optimization Dashboard screenshot" loading="lazy" />
+              <img src="assets/projects/dose_response.png" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <strong class="card-title">Dose–Response Curve Dashboard (1st Place, BMS Challenge)</strong>
+                <span class="muted">Dec 2025</span>
+              </div>
+              <p class="card-text">
+                Streamlit dashboard enabling pharmaceutical scientists to simulate 2/4/5PL and linear dose-response models.
+                Includes curve saving, error-based dilution suggestions, and parameter comparison.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="assets/projects/portfolio_opt.png" loading="lazy" />
             </div>
             <div class="card-body">
               <div class="card-head">
@@ -146,56 +169,30 @@
                 <span class="muted">Dec 2025</span>
               </div>
               <p class="card-text">
-                Streamlit dashboard for optimizing portfolios using ML models (XGBoost, Random Forest, PCA, CatBoost)
-                with user-set parameters and benchmark comparison.
+                Built ML-driven portfolio optimizer (XGBoost, Random Forest, PCA, CatBoost).
+                XGBoost outperformed SPY by 4.17% in September 2025.
               </p>
-              <div class="links">
-                <a href="https://fsrmportfolioopt.streamlit.app/" target="_blank" rel="noreferrer">Streamlit Dashboard</a>
-              </div>
             </div>
           </article>
 
-          <article class="card" aria-label="Dose–Response Curve Dashboard">
+          <article class="card">
             <div class="card-media">
-              <img src="assets/projects/dose_response.png" alt="Dose–Response Curve Dashboard screenshot" loading="lazy" />
+              <img src="assets/projects/coda.png" loading="lazy" />
             </div>
             <div class="card-body">
               <div class="card-head">
-                <strong class="card-title">Dose–Response Curve Dashboard</strong>
-                <span class="muted">Dec 2025</span>
-              </div>
-              <p class="card-text">
-                Interactive simulator for dose-response curves using 2/4/5PL and linear models; supports saving curves,
-                suggesting dilution schemes, and exporting locked fits.
-              </p>
-              <div class="links">
-                <a href="https://bmsdoseresponse.streamlit.app/" target="_blank" rel="noreferrer">Streamlit Dashboard</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" aria-label="CODA (Hack GT 9)">
-            <div class="card-media">
-              <img src="assets/projects/coda.png" alt="CODA project screenshot" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">CODA (Hack GT 9)</strong>
+                <strong class="card-title">CODA (2nd Place, Hack GT 9)</strong>
                 <span class="muted">Oct 2022</span>
               </div>
               <p class="card-text">
-                2nd place overall. Interactive rhythm game to learn ASL using computer vision to track hand movements
-                (Python, Figma, Unity).
+                Computer-vision rhythm game teaching ASL using hand-tracking.
               </p>
-              <div class="links">
-                <a href="https://devpost.com/software/coda-wzqit9" target="_blank" rel="noreferrer">DevPost</a>
-              </div>
             </div>
           </article>
 
-          <article class="card" aria-label="Alzheimer’s Assessment (CNN)">
+          <article class="card">
             <div class="card-media">
-              <img src="assets/projects/alzheimers.png" alt="Alzheimer’s Assessment project screenshot" loading="lazy" />
+              <img src="assets/projects/alzheimers.png" loading="lazy" />
             </div>
             <div class="card-body">
               <div class="card-head">
@@ -203,69 +200,34 @@
                 <span class="muted">May 2023</span>
               </div>
               <p class="card-text">
-                CNN pipeline to assess Alzheimer’s severity from CT scans; preprocessing included oversampling, cropping,
-                and PCA; evaluated ResNet/AlexNet/PCANet; illustrated architectures with LaTeX.
+                CNN-based severity classifier using oversampling, PCA, ResNet, AlexNet, PCANet.
               </p>
-              <div class="links">
-                <a href="https://github.com/john-rehme/ML_Project" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
             </div>
           </article>
+
         </div>
       </section>
 
-      <section class="block full-width" aria-label="Papers and presentations">
-        <h2 class="section-title">Papers &amp; Presentations</h2>
-        <div class="dashed-box">
-          <div class="item">
-            <strong>Auditory decision-making deficits after permanent noise-induced hearing loss</strong>
-            <p class="muted">Scientific Reports, 2025</p>
-          </div>
-
-          <div class="item">
-            <strong>Audiovisual decision-making deficits after hearing loss</strong>
-            <p class="muted">ARO Midwinter Meeting, 2024 • Poster (Anaheim, CA)</p>
-          </div>
-
-          <div class="item">
-            <strong>Intergenerational trauma and Russian/Ukrainian cultural identities</strong>
-            <p class="muted">Undergraduate Research Spring Symposium, 2022 • Poster</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="block full-width" aria-label="Education">
+      <!-- EDUCATION -->
+      <section class="block full-width">
         <h2 class="section-title">Education</h2>
         <div class="dashed-box">
           <div class="item">
-            <div class="itemhead">
-              <strong>Rutgers University</strong>
-              <span class="muted">2025–Present</span>
-            </div>
-            <p>
-              M.S. in Data Science<br />
-              <span class="muted">GPA: 3.96 / 4.0</span>
-            </p>
+            <strong>Rutgers University</strong>
+            <p>M.S. Data Science • GPA: 3.96/4.0 • 2025–Present</p>
           </div>
-
           <div class="item">
-            <div class="itemhead">
-              <strong>Georgia Institute of Technology</strong>
-              <span class="muted">2019–2023</span>
-            </div>
-            <p>
-              B.S. in Neuroscience<br />
-              Minor: Computing &amp; Intelligence<br />
-              <span class="muted">Major GPA: 3.6 / 4.0</span>
-            </p>
+            <strong>Georgia Institute of Technology</strong>
+            <p>B.S. Neuroscience • Minor: Computing & Intelligence • 2019–2023</p>
           </div>
         </div>
       </section>
+
     </div>
   </main>
 
   <footer class="site-footer">
-  Made with <span class="heart">♥</span> by Madeline Berns
+    Made with <span class="heart">♥</span> by Madeline Berns
   </footer>
 
   <script src="assets/chatbot.js"></script>
