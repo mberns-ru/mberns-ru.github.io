@@ -1,0 +1,13 @@
+name = "portfolio-chatbot"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# GEMINI_API_KEY must be set as a secret, not here:
+#   wrangler secret put GEMINI_API_KEY
+#
+# Get a free key at https://aistudio.google.com/app/apikey
+
+[vars]
+# Optional override — defaults to "gemini-flash-latest" in worker.js if unset.
+# Check https://ai.google.dev/gemini-api/docs/models for current model names.
+GEMINI_MODEL = "gemini-flash-latest"
