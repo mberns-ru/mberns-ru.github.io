@@ -8,286 +8,288 @@
   <meta name="color-scheme" content="light dark" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..600&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" aria-label="Main">
-    <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="Back to top">MB</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
+  <!-- Taskbar -->
+  <nav class="taskbar" aria-label="Main">
+    <div class="taskbar-inner">
+      <a class="start" href="#top" aria-label="Back to top"><img src="assets/pixel/sparkle.svg" alt="" /><span>MB</span></a>
+      <div class="tasks">
+        <a href="#programs">Programs</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#connect">Connect</a>
       </div>
-      <a class="nav-cta" href="#chat">Ask me</a>
     </div>
   </nav>
 
-  <!-- Profile header -->
-  <header class="hero" id="top">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Data Scientist</p>
-        <h1 class="name">Madeline Berns</h1>
-        <p class="tagline">Machine Learning <span class="sep" aria-hidden="true">/</span> Applied Statistics</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#chat">Ask me anything</a>
-          <a class="btn" href="https://github.com/mberns-ru" target="_blank" rel="noopener">
+  <main class="desktop" id="top">
+
+  <section class="win scene-clouds" id="home" aria-labelledby="home-title">
+    <div class="win-bar">
+      <h2 class="win-title" id="home-title">Madeline_Berns.exe</h2>
+      <img class="win-icon" src="assets/pixel/sparkle.svg" alt="" />
+    </div>
+    <div class="win-body">
+      <div class="hero">
+        <div class="hero-main">
+          <div class="hero-intro">
+            <div class="pane digital-me">
+            <div class="pane-bar"><span class="pane-title">Digital Me</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <img src="assets/pixel/profile_pixel.png" alt="Pixel-art portrait of Madeline Berns" class="avatar avatar-pixel" />
+              <img src="assets/profile.png" alt="" class="avatar avatar-photo" aria-hidden="true" />
+            </div>
+          </div>
+            <p class="bubble-speech">Hi! Welcome to my portfolio!</p>
+          </div>
+          <h1 class="name">Madeline Berns</h1>
+          <p class="tagline">Data Scientist <span aria-hidden="true">·</span> Machine Learning <span aria-hidden="true">·</span> Applied Statistics</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://github.com/mberns-ru" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
             GitHub
-          </a>
-          <a class="btn" href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noopener">
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.15 0h13.7C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.15 1.15H1.15C.52 16 0 15.48 0 14.85V1.15zM4.75 13.4V6.17H2.35v7.23h2.4zM3.55 5.18c.84 0 1.36-.56 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .69.52 1.25 1.32 1.25h.02zM13.65 13.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.27 0-1.84.7-2.16 1.19V6.17h-2.4c.03.68 0 7.23 0 7.23h2.4V9.36c0-.22.02-.43.08-.59.17-.43.57-.88 1.23-.88.87 0 1.22.66 1.22 1.64v3.87h2.39z"/></svg>
             LinkedIn
-          </a>
+            </a>
+          </div>
+        </div>
+        <div class="hero-chat">
+          <div class="pane chat-panel" id="chat">
+            <div class="pane-bar chat-title-row">
+              <span class="pane-title chat-title">Ask_Me.exe</span>
+              <button id="chat-toggle" class="chat-toggle" type="button" aria-label="Minimize chat">
+                <span class="chev">▾</span>
+              </button>
+            </div>
+            <div class="pane-body chatbox" id="chatbot">
+              <div id="chat-log" class="chatlog"></div>
+              <form id="chat-form" class="chatform">
+                <label class="prompt" for="chat-input">&gt;</label>
+                <input id="chat-input" type="text" placeholder="Start typing..." required />
+                <button type="submit">send</button>
+              </form>
+              <p class="chat-note">
+                The chatbot answers only from my resume/portfolio content.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="assets/profile.png" alt="Photo of Madeline Berns" class="avatar" />
+    </div>
+  </section>
+
+  <section class="win scene-mountains" id="programs" aria-labelledby="programs-title">
+    <div class="win-bar">
+      <h2 class="win-title" id="programs-title">Installed_Programs</h2>
+      <img class="win-icon" src="assets/pixel/sparkle.svg" alt="" />
+    </div>
+    <div class="win-body">
+      <div class="programs">
+          <div class="pane software">
+            <div class="pane-bar"><span class="pane-title">Software List</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <ul class="skill-list">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>SciPy</li>
+                <li>PyTorch</li>
+                <li>TensorFlow</li>
+                <li>scikit-learn</li>
+                <li>Plotly</li>
+                <li>Streamlit</li>
+                <li>Power BI</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>SAS</li>
+                <li>Adobe CC</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pane about">
+            <div class="pane-bar"><span class="pane-title">About Me</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <p>
+                I build end-to-end data pipelines, predictive models, and interactive dashboards
+                spanning finance, neuroscience, and applied machine learning.
+                My work integrates statistical modeling, ML, and visualization to turn complex data into actionable insights.
+              </p>
+              <p class="muted">
+                M.S. Data Science (Rutgers, GPA 3.97) • B.S. Neuroscience (Georgia Tech)
+              </p>
+            </div>
+          </div>
+          <div class="pane education" id="education">
+            <div class="pane-bar"><span class="pane-title">Education</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="edu">
+                <strong>Rutgers University</strong>
+                <p>M.S. Data Science • GPA: 3.97/4.0 • 2025–Present</p>
+              </div>
+              <div class="edu">
+                <strong>Georgia Institute of Technology</strong>
+                <p>B.S. Neuroscience • Minor: Computing & Intelligence • 2019–2023</p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="page">
-    <div class="layout">
-
-      <!-- LEFT COLUMN -->
-      <div class="leftcol">
-
-        <!-- BIO -->
-        <section class="block" id="about">
-          <h2 class="section-title"><span class="section-num">01</span>Bio</h2>
-          <div class="panel">
-            <p class="lead">
-              I build end-to-end data pipelines, predictive models, and interactive dashboards
-              spanning finance, neuroscience, and applied machine learning.
-              My work integrates statistical modeling, ML, and visualization to turn complex data into actionable insights.
-            </p>
-            <p class="muted">
-              M.S. Data Science (Rutgers, GPA 3.97) • B.S. Neuroscience (Georgia Tech)
-            </p>
-          </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section class="block" id="experience">
-          <h2 class="section-title"><span class="section-num">02</span>Experience</h2>
-          <div class="panel timeline">
-
-            <!-- Capricor Therapeutics -->
-            <div class="item timeline-item">
-              <div class="itemhead">
-                <strong>Clinical Data Management Intern — Capricor Therapeutics, Inc. (Remote)</strong>
-                <span class="muted">Mar 2026 – Present</span>
-              </div>
+  <section class="win scene-plain" id="experience" aria-labelledby="experience-title">
+    <div class="win-bar">
+      <h2 class="win-title" id="experience-title">Experience.log</h2>
+      <img class="win-icon" src="assets/pixel/sparkle.svg" alt="" />
+    </div>
+    <div class="win-body">
+      <div class="stack">
+          <div class="pane ">
+            <div class="pane-bar"><span class="pane-title">Capricor Therapeutics, Inc. (Remote)</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <p class="role">Clinical Data Management Intern</p>
+              <p class="date">Mar 2026 – Present</p>
               <ul>
                 <li>Automated multi-source Python pipelines to reconcile adverse events against concomitant medications and clinical procedures for a Phase II/III muscular dystrophy trial, integrated into a team-wide CDM dashboard with audit-ready Excel outputs deployed on AWS EC2 with Microsoft Entra ID authentication.</li>
                 <li>Proposed a statistical analysis plan (SAP) per ICH E9, specifying MMRM as the primary analysis for repeated-measures endpoints and multiple imputation under MAR as a sensitivity analysis for intercurrent events.</li>
                 <li>Used SAS Enterprise Guide and SQL to analyze immunogenicity vs. IP safety/efficacy using HLA typing and DSA data; built an interactive Python/Streamlit dashboard for trial-wide and patient-level exploration.</li>
               </ul>
             </div>
-
-            <!-- Data Analyst -->
-            <div class="item timeline-item">
-              <div class="itemhead">
-                <strong>Data Analyst — Friends Café (New Brunswick, NJ)</strong>
-                <span class="muted">June 2025 – Mar 2026</span>
-              </div>
+          </div>
+          <div class="pane ">
+            <div class="pane-bar"><span class="pane-title">Friends Café (New Brunswick, NJ)</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <p class="role">Data Analyst</p>
+              <p class="date">June 2025 – Mar 2026</p>
               <ul>
                 <li>Analyzed transaction-level sales data to identify revenue-driving products, peak demand times, and ingredient trends.</li>
                 <li>Built ARIMA and XGBoost forecasting models to predict daily revenue and item demand (evaluated via MAE/RMSE).</li>
                 <li>Developed an interactive Power BI dashboard for business insights and reporting.</li>
               </ul>
             </div>
-
-            <!-- Rutgers RA -->
-            <div class="item timeline-item">
-              <div class="itemhead">
-                <strong>Research Assistant — Rutgers University</strong>
-                <span class="muted">Aug 2023 – Jan 2025</span>
-              </div>
+          </div>
+          <div class="pane ">
+            <div class="pane-bar"><span class="pane-title">Rutgers University</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <p class="role">Research Assistant</p>
+              <p class="date">Aug 2023 – Jan 2025</p>
               <ul>
                 <li>Built Python pipelines analyzing rodent auditory decision-making behavior using Drift Diffusion Modeling (DDM).</li>
                 <li>Processed neural implant recordings; spike sorted units and developed SVM-based decoders to predict behavior.</li>
                 <li>Conducted statistical inference and regression analyses; produced publication-ready figures and schematics.</li>
               </ul>
             </div>
-
-            <!-- GTRI -->
-            <div class="item timeline-item">
-              <div class="itemhead">
-                <strong>Research Assistant — Georgia Tech Research Institute</strong>
-                <span class="muted">May 2021 – May 2023</span>
-              </div>
+          </div>
+          <div class="pane ">
+            <div class="pane-bar"><span class="pane-title">Georgia Tech Research Institute</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <p class="role">Research Assistant</p>
+              <p class="date">May 2021 – May 2023</p>
               <ul>
                 <li>Performed qualitative content and frequency analyses on cultural trauma and political identity datasets.</li>
                 <li>Mined online Russian press data; supported ML protocol development and data visualization.</li>
               </ul>
             </div>
-
           </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="block">
-          <h2 class="section-title section-title-sm">Toolkit</h2>
-          <div class="skills-bar">
-          <span class="pill">Python</span>
-          <span class="pill">Pandas</span>
-          <span class="pill">NumPy</span>
-          <span class="pill">SciPy</span>
-          <span class="pill">PyTorch</span>
-          <span class="pill">TensorFlow</span>
-          <span class="pill">scikit-learn</span>
-          <span class="pill">Plotly</span>
-          <span class="pill">Streamlit</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">R</span>
-          <span class="pill">SQL</span>
-          <span class="pill">SAS</span>
-          <span class="pill">Adobe CC</span>
-        </div>
-        </section>
-
       </div>
+    </div>
+  </section>
 
-      <!-- RIGHT COLUMN -->
-      <aside class="rightcol" id="chat">
-        <div class="chat-panel">
-          <div class="chat-title-row">
-            <div>
-              <div class="chat-title">Ask me anything!</div>
-              <div class="chat-sub">AI assistant trained on my resume</div>
-            </div>
-            <button id="chat-toggle" class="chat-toggle" type="button" aria-label="Toggle chat">
-              <span class="chev">▾</span>
-            </button>
-          </div>
-          <div class="chatbox" id="chatbot">
-            <div id="chat-log" class="chatlog"></div>
-            <form id="chat-form" class="chatform">
-              <input id="chat-input" type="text" placeholder="Start typing..." required />
-              <button type="submit">send</button>
-            </form>
-            <p class="chat-note">
-              The chatbot answers only from my resume/portfolio content.
-            </p>
-          </div>
-        </div>
-      </aside>
-
-      <!-- PROJECTS -->
-      <section class="block full-width" id="projects">
-        <h2 class="section-title"><span class="section-num">03</span>Projects</h2>
-        <div class="cards-grid">
-
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/projects/watchwise.png" alt="Screenshot of Watchwise AI" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">Watchwise AI — Movie Recommendation Platform</strong>
-                <span class="muted">May 2026</span>
-              </div>
-              <p class="card-text">
-                Streamlit app integrating the Gemini and TMDB APIs to generate personalized movie recommendations
+  <section class="win scene-clouds-lite" id="projects" aria-labelledby="projects-title">
+    <div class="win-bar">
+      <h2 class="win-title" id="projects-title">Projects</h2>
+      <img class="win-icon" src="assets/pixel/sparkle.svg" alt="" />
+    </div>
+    <div class="win-body">
+      <div class="proj-grid">
+          <div class="pane proj">
+            <div class="pane-bar"><span class="pane-title">Watchwise AI</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="proj-media"><img src="assets/projects/watchwise.png" alt="Screenshot of Watchwise AI" loading="lazy" /></div>
+              <p class="date">May 2026</p>
+              <h3 class="proj-title">Watchwise AI — Movie Recommendation Platform</h3>
+              <p class="proj-text">Streamlit app integrating the Gemini and TMDB APIs to generate personalized movie recommendations
                 from natural-language queries and Letterboxd viewing history, with agentic multi-turn refinement
                 and a self-correction loop to avoid duplicate suggestions.
-                <a href="https://watchwiseai.streamlit.app/" target="_blank">Live app →</a>
-              </p>
+                <a href="https://watchwiseai.streamlit.app/" target="_blank">Live app →</a></p>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/projects/dose_response.png" alt="Screenshot of Dose–Response Curve Dashboard" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">Dose–Response Curve Dashboard (1st Place, BMS Challenge)</strong>
-                <span class="muted">Dec 2025</span>
-              </div>
-              <p class="card-text">
-                Streamlit dashboard enabling pharmaceutical scientists to simulate 2/4/5PL and linear dose-response models.
+          </div>
+          <div class="pane proj">
+            <div class="pane-bar"><span class="pane-title">Dose–Response Curve Dashboard</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="proj-media"><img src="assets/projects/dose_response.png" alt="Screenshot of Dose–Response Curve Dashboard" loading="lazy" /></div>
+              <p class="date">Dec 2025</p>
+              <h3 class="proj-title">Dose–Response Curve Dashboard (1st Place, BMS Challenge)</h3>
+              <p class="proj-text">Streamlit dashboard enabling pharmaceutical scientists to simulate 2/4/5PL and linear dose-response models.
                 Includes curve saving, error-based dilution suggestions, and parameter comparison.
-                <a href="https://bmsdoseresponse.streamlit.app/" target="_blank">Live app →</a>
-              </p>
+                <a href="https://bmsdoseresponse.streamlit.app/" target="_blank">Live app →</a></p>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/projects/portfolio_opt.png" alt="Screenshot of Portfolio Optimization Dashboard" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">Portfolio Optimization Dashboard</strong>
-                <span class="muted">Dec 2025</span>
-              </div>
-              <p class="card-text">
-                Built ML-driven portfolio optimizer (XGBoost, Random Forest, PCA, CatBoost).
+          </div>
+          <div class="pane proj">
+            <div class="pane-bar"><span class="pane-title">Portfolio Optimization Dashboard</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="proj-media"><img src="assets/projects/portfolio_opt.png" alt="Screenshot of Portfolio Optimization Dashboard" loading="lazy" /></div>
+              <p class="date">Dec 2025</p>
+              <h3 class="proj-title">Portfolio Optimization Dashboard</h3>
+              <p class="proj-text">Built ML-driven portfolio optimizer (XGBoost, Random Forest, PCA, CatBoost).
                 XGBoost outperformed SPY by 4.17% in September 2025.
-                <a href="https://github.com/mberns-ru/FSRM-Portfolio-Optimization-Fall25" target="_blank">GitHub →</a>
-              </p>
+                <a href="https://github.com/mberns-ru/FSRM-Portfolio-Optimization-Fall25" target="_blank">GitHub →</a></p>
             </div>
-          </article>
-
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/projects/coda.png" alt="Screenshot of CODA" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">CODA (2nd Place, Hack GT 9)</strong>
-                <span class="muted">Oct 2022</span>
-              </div>
-              <p class="card-text">
-                Computer-vision rhythm game teaching ASL using hand-tracking.
-                <a href="https://devpost.com/software/coda-wzqit9" target="_blank">Devpost →</a>
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-media">
-              <img src="assets/projects/alzheimers.png" alt="Screenshot of Alzheimer’s Assessment" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <div class="card-head">
-                <strong class="card-title">Alzheimer’s Assessment (CNN)</strong>
-                <span class="muted">May 2023</span>
-              </div>
-              <p class="card-text">
-                CNN-based severity classifier using oversampling, PCA, ResNet, AlexNet, PCANet.
-              </p>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="block full-width" id="education">
-        <h2 class="section-title"><span class="section-num">04</span>Education</h2>
-        <div class="edu-grid">
-          <div class="panel edu">
-            <strong>Rutgers University</strong>
-            <p>M.S. Data Science • GPA: 3.97/4.0 • 2025–Present</p>
           </div>
-          <div class="panel edu">
-            <strong>Georgia Institute of Technology</strong>
-            <p>B.S. Neuroscience • Minor: Computing & Intelligence • 2019–2023</p>
+          <div class="pane proj">
+            <div class="pane-bar"><span class="pane-title">CODA</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="proj-media"><img src="assets/projects/coda.png" alt="Screenshot of CODA" loading="lazy" /></div>
+              <p class="date">Oct 2022</p>
+              <h3 class="proj-title">CODA (2nd Place, Hack GT 9)</h3>
+              <p class="proj-text">Computer-vision rhythm game teaching ASL using hand-tracking.
+                <a href="https://devpost.com/software/coda-wzqit9" target="_blank">Devpost →</a></p>
+            </div>
           </div>
-        </div>
-      </section>
-
+          <div class="pane proj">
+            <div class="pane-bar"><span class="pane-title">Alzheimer’s Assessment</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <div class="proj-media"><img src="assets/projects/alzheimers.png" alt="Screenshot of Alzheimer’s Assessment" loading="lazy" /></div>
+              <p class="date">May 2023</p>
+              <h3 class="proj-title">Alzheimer’s Assessment (CNN)</h3>
+              <p class="proj-text">CNN-based severity classifier using oversampling, PCA, ResNet, AlexNet, PCANet.</p>
+            </div>
+          </div>
+      </div>
     </div>
+  </section>
+
+  <section class="win scene-sea" id="connect" aria-labelledby="connect-title">
+    <div class="win-bar">
+      <h2 class="win-title" id="connect-title">Connect.exe</h2>
+      <img class="win-icon" src="assets/pixel/sparkle.svg" alt="" />
+    </div>
+    <div class="win-body">
+      <div class="connect">
+        <p class="connect-head">Want to work together?<br /><span>Let&rsquo;s connect!</span></p>
+        <img class="spark s1" src="assets/pixel/sparkle.svg" alt="" />
+        <img class="spark s2" src="assets/pixel/sparkle.svg" alt="" />
+        <img class="spark s3" src="assets/pixel/sparkle.svg" alt="" />
+        <div class="pane contact-pane">
+            <div class="pane-bar"><span class="pane-title">Contact Me</span><span class="dots" aria-hidden="true"></span></div>
+            <div class="pane-body">
+              <dl class="contact">
+                <dt>&gt; GitHub:</dt><dd><a href="https://github.com/mberns-ru" target="_blank" rel="noopener">github.com/mberns-ru</a></dd>
+                <dt>&gt; LinkedIn:</dt><dd><a href="https://www.linkedin.com/in/mpberns" target="_blank" rel="noopener">linkedin.com/in/mpberns</a></dd>
+                <dt>&gt; Assistant:</dt><dd><a href="#chat">Ask_Me.exe ↑</a></dd>
+              </dl>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer class="site-footer">
